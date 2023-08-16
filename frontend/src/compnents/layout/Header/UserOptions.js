@@ -23,7 +23,7 @@ const UserOptions = ({user}) => {
   const options=[
     {icon:<AiOutlineUnorderedList/>,name:"Orders",func:orders},
     {icon:<BsFillPersonFill/>,name:"Profile",func:account},
-    {icon: (<AiOutlineShoppingCart style={{ color: cartItems.length > 0 ? "tomato" : "unset" }}/>),
+    {icon: (<AiOutlineShoppingCart style={{ color: cartItems.length > 0 ? "#6F61C0" : "unset" }}/>),
       name: `Cart(${cartItems.length})`,
       func: cart,
     },

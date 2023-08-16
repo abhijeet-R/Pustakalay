@@ -23,10 +23,10 @@ const Home = () => {
   return (
     <Fragment>
     {loading?(<Loader/>):(<Fragment>
-      <MetaData title="Ecommerce" />
+      <MetaData title="Pustakalay" />
       <div className="banner">
-        <p>Welcome to Ecommerce website</p>
-        <h1>FIND AMAZING PRODUCTS BELOW</h1>
+        <p>Welcome to Pustakalay website</p>
+        <h1>FIND YOUR AMAZING BOOKS HERE</h1>
         <a href="#container">
           <buttton>
             scroll <CgMouse />

@@ -28,13 +28,10 @@ const NewProduct = ({ history }) => {
   const [imagesPreview, setImagesPreview] = useState(profilePng);
 
   const categories = [
-    "Laptop",
-    "Footwear",
-    "Bottom",
-    "Tops",
-    "Attire",
-    "Camera",
-    "SmartPhones",
+    "Comic",
+    "Fiction",
+    "Historical",
+    "Self Growth",
   ];
 
   useEffect(() => {

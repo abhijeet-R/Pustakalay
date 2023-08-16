@@ -11,17 +11,16 @@ import MetaData from "../layout/MetaData";
 
 const Products = ({match}) => {
   const categories = [
-    "laptop",
-    "Footwear",
-    "Attire",
-    "Camera",
-    "SmartPhones",
+    "Comic",
+    "Fiction",
+    "Historical",
+    "Self Growth",
   ];
   const dispatch = useDispatch();
   const alert = useAlert();
   const keyword=match.params.keyword
   const [currentPage,setCurrentPage]=useState(1)
-  const [price,setPrice]=useState([0,200000])
+  const [price,setPrice]=useState([0,10000])
   const [category,setCategory]=useState("")
   const [ratings,setRatings]=useState(0)
   const { loading, error, products, productsCount ,resultPerPage,filterProductsCount} = useSelector(
@@ -55,7 +54,7 @@ setPrice(newPrice)
             valueLabelDisplay="auto"
             aria-labelledby="range-Slider"
             min={0}
-            max={200000}></Slider>
+            max={10000}></Slider>
             <Typography>Categories</Typography>
             <ul className="categoryBox">
               {categories.map((category) => (
