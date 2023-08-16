@@ -41,7 +41,7 @@ setPrice(newPrice)
   }, [dispatch,keyword,currentPage,price,category,ratings,error,alert]);
   let count=filterProductsCount;
   return <Fragment>{loading ? <Loader /> : <Fragment>
-  <MetaData title="PRODUCTS -- ECOMMERCE" />
+  <MetaData title="PRODUCTS -- PUSTAKALAY" />
     <h2 className="productsHeading">Products</h2>
     <div className="products">
     {products && products.map((product) => <Product product={product} />)}
